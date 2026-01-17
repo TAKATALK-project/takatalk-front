@@ -23,10 +23,10 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
-          cache-dependency-path: "./takatalk_front/package-lock.json"
+          cache-dependency-path: "package-lock.json"
 
       - name: Install dependencies
-        run: npm Install
+        run: npm install
 
       - name: Type check # 타입 안정성 검증
         run: npm run type-check # package.json에 설정 필요
